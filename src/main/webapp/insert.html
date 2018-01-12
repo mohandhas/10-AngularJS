@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Insert</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="insertController.js"></script>
+      
+</head>
+
+<body>
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+		        <nav class="navbar navbar-inverse">
+		            <div class="container-fluid">
+		                <div class="navbar-header">
+		                    <a class="navbar-brand" href="#">Insert Employee</a>
+		            </div>
+		       </nav>
+      	</nav> 
+        <div ng-app="insert" ng-controller="addController">     
+            <form>
+				  <div class="form-group">
+				    <label>Employee ID</label>
+				    <input type="text" ng-model="id" class="form-control" placeholder="Enter ID"	>			  
+				  </div>
+				  <div class="form-group">
+				    <label>Name</label>
+				    <input type="text" ng-model="name" class="form-control" placeholder="Enter Name"	>			  
+				  </div>
+				  <div class="form-group">
+				    <label>E Mail</label>
+				    <input type="text" ng-model="email" class="form-control" placeholder="Enter Email"	>			  
+				  </div>
+				  <div class="form-group">
+				    <label>Phone</label>
+				    <input type="text" ng-model="phone" class="form-control" placeholder="Enter Phone"	>			  
+				  </div>
+				  
+				  <button type="submit" ng-click="insertEmployee()" class="btn btn-primary">Submit</button>
+				  
+				  <button type="submit" onclick="/index.html" class="btn btn-primary">Back</button>
+			</form>
+        </div>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+</body>
+
+</html>
